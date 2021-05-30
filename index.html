@@ -17,12 +17,10 @@
             <div style="background-color: burlywood;" class="slider__slide">Slide 4</div>
             <div style="background-color: cadetblue;" class="slider__slide">Slide 5</div>
             <div style="background-color: blue;" class="slider__slide">Slide 6</div>
-            <div style="background-color: blueviolet;" class="slider__slide">Slide 7</div>
-            <div style="background-color: brown;" class="slider__slide">Slide 8</div>
-            <div style="background-color: burlywood;" class="slider__slide">Slide 9</div>
-            <div style="background-color: cadetblue;" class="slider__slide">Slide 10</div>
         </div>
     </div>
+
+    
 
     <nav class="slider__navigation">
         <button class="slider__btn">Prew slide</button>
@@ -57,5 +55,11 @@
     
 
     <script src="script.js"></script>
+    
+    <script>
+        for (let i = 0; i < slide.length; i++) {
+            slide[i].innerHTML = 'Slide ' + (i + 1)
+        }
+    </script>
 </body>
 </html>
